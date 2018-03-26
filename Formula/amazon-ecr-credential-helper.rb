@@ -1,9 +1,9 @@
 class AmazonEcrCredentialHelper < Formula
   desc "Automatically gets credentials for Amazon ECR on docker push/docker pull."
   homepage "https://github.com/estahn/amazon-ecr-credential-helper"
-  url "https://github.com/estahn/amazon-ecr-credential-helper/releases/download/v0.0.2/amazon-ecr-credential-helper_0.0.2_darwin_amd64.tar.gz"
-  version "0.0.2"
-  sha256 "a8b89449866eead5a993223479bb1f046dfdb872671bb28d9454b2c29073923b"
+  url "https://github.com/estahn/amazon-ecr-credential-helper/releases/download/v0.1.0/amazon-ecr-credential-helper_0.1.0_darwin_amd64.tar.gz"
+  version "0.1.0"
+  sha256 "5d2d076e3b8dd0e48fb3cb93f56659ddb009156ee3afcadd35f60bcebef4c4df"
   
   depends_on "jq"
 
