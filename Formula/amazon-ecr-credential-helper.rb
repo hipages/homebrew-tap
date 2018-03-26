@@ -1,25 +1,12 @@
 class AmazonEcrCredentialHelper < Formula
   desc "Automatically gets credentials for Amazon ECR on docker push/docker pull."
   homepage "https://github.com/estahn/amazon-ecr-credential-helper"
-  url "https://github.com/estahn/amazon-ecr-credential-helper/releases/download/v0.1.0/amazon-ecr-credential-helper_0.1.0_darwin_amd64.tar.gz"
-  version "0.1.0"
-  sha256 "5d2d076e3b8dd0e48fb3cb93f56659ddb009156ee3afcadd35f60bcebef4c4df"
-  
-  depends_on "jq"
+  url "https://github.com/estahn/amazon-ecr-credential-helper/releases/download/v0.1.1/amazon-ecr-credential-helper_0.1.1_darwin_amd64.tar.gz"
+  version "0.1.1"
+  sha256 "fc5d2280026ff6328cb6111e1e7932329bebf53932df82edff60bbb0bfba332e"
 
   def install
     bin.install "docker-credential-ecr-login"
-    #system "jq", "-M", "'.credHelpers += {foobar:3}'", "~/.docker/config.json"
-  end
-
-  def caveats
-    "Add the following to your ~/.docker/config.json
-{
-	"credHelpers": {
-		"aws_account_id.dkr.ecr.region.amazonaws.com": "ecr-login"
-	}
-}
-"
   end
 
   test do
